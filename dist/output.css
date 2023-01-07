@@ -551,8 +551,8 @@ video {
   width: 100%;
 }
 
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.grid-cols-\[repeat\(auto-fill\2c _minmax\(500px\2c _1fr\)\)\] {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
 .flex-col {
@@ -650,17 +650,5 @@ video {
   .md\:mx-8 {
     margin-left: 2rem;
     margin-right: 2rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
